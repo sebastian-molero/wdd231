@@ -1,6 +1,6 @@
 /*********************** SITE WIDE ***********************/
 *{
-    font-family: "Josefin Sans", sans-serif;
+    font-family: Lato, "Josefin Sans", sans-serif;
     box-sizing: border-box;
 }
 
@@ -174,7 +174,7 @@ section > h2{
     width: 90%;
     border-radius: 2px;
     padding: .3rem;
-    color: #fffa;
+    color: #fff;
     margin: auto;
 }
 .completed{
