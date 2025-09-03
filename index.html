@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian's WDD-231 Home Page</title>
+    <meta name="description" content="Sebastian's WDD-231 Home Page">
+    <meta name="author" content="Sebastian Molero">
+
+    <!--Style Sheets Here-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!--Scripts Here-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <img src="images/home.svg" alt="Home Logo" width="512" height="512">
+        <span>Sebastian Molero WDD 231</span>
+        <button id="ham-Btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul class="nav-list">
+            <li class="list-item current"><a class="nav-link" href="#">Home</a></li>
+            <li class="list-item"><a class="nav-link" href="#">Chamber Project</a></li>
+            <li class="list-item"><a class="nav-link" href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Course Home Page</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>My name is Sebastian Molero, I am 19 years old and I am from Bogota, Colombia. Now I am studying at BYU Idaho to become a software developer.</p>
+            <p>I am a person that loves sports, I am really good at playing soccer, basketball, volleyball and running. I also like listening to music, it makes me feel relaxed and energized at the same time. I love cooking too, I grow up seeing people around me cooking and that inspired me a lot.</p>
+            <p>One of the things recently found very interesting and striking is programming. I didn't know that I liked to code, but I gave it a try and I really enjoy it. Programming is fascinating and I love it, you can create almost anything from scratch.</p>
+        </section>
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="Sebastian Molero's Photo">
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="coursesContainer"></div>
+            <p id="totalCredits"></p>
+            <p id="creditsEarned"></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+                <a href="https://co.linkedin.com/" target="_blank">
+                    <img src="images/linkedin.svg" alt="linkedin" width="50" height="50">
+                </a>
+                <a href="https://github.com/sebastian-molero/wdd131" target="_blank">
+                    <img src="images/github.svg" alt="github" width="50" height="50">
+                </a>
+        </div>
+        <p>&copy; <span id="currentYear"></span> • Sebastian Molero • Bogota, Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

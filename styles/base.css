@@ -1,0 +1,218 @@
+/*********************** SITE WIDE ***********************/
+*{
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+header,
+main,
+nav,
+footer{
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-wrap: balance;
+}
+
+p{
+    text-wrap: pretty;
+}
+/*********************** HEADER ***********************/
+.header{
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: 1px solid #ddd;
+    column-gap: 8px;
+    align-items: baseline;
+}
+
+.header img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.header span{
+    font-size: 1.2rem;
+    color: rgb(8, 73, 196);
+}
+
+/*********************** HAMBURGER NAVIGATION ***********************/
+.hamburger{
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color: #3d405b;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before{
+    content: "\2630";
+}
+
+.hamburger.show::before{
+    content: "\00D7";
+}
+
+/*********************** NAVIGATION ***********************/
+.navigation{
+    display: none
+}
+
+.navigation.show{
+    display: block;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link{
+    display: block;
+    padding: .8rem 25px;
+    color: rgb(8, 73, 196);
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    transition: background-color .4s, color .4s;
+    -webkit-transition: background-color .4s, color .4s;
+    -moz-transition: background-color .4s, color .4s;
+    -ms-transition: background-color .4s, color .4s;
+    -o-transition: background-color .4s, color .4s;
+}
+
+.current{
+    background-color: rgba(211, 211, 211, 0.514);
+}
+
+.nav-link:hover{
+    background-color: #0e4effaf;
+    color: #fff;
+}
+
+/*********************** MAIN ***********************/
+main{
+    margin: 2rem auto;
+    max-width: 80%;
+}
+
+section{
+    background-color: #eeed;
+    border-radius: 8px;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 1s;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+section:hover{
+    box-shadow: 0 0 20px 0 #0007;
+}
+
+section > h2{
+    text-align: center;
+    padding: .5rem;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(8, 73, 196);
+    border-radius: 8px 8px 0 0;
+}
+.about-me > p{
+    padding: 0 .8rem;
+    font-size: 1.1em;
+}
+
+.student-photo > img{
+    display: block;
+    margin: auto;
+    max-height: 270px;
+    border-radius: 4px;
+}
+
+.buttons{
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+}
+
+.buttons button{
+    flex: 1;
+    padding: .5rem;
+    background-color: rgba(147, 167, 233, 0.699);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.buttons button:hover{
+    background-color: rgb(110, 141, 241);
+}
+
+#coursesContainer{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+
+.course{
+    text-align: center;
+    background-color: #5e5c5cad;
+    width: 90%;
+    border-radius: 2px;
+    padding: .3rem;
+    color: #fffa;
+    margin: auto;
+}
+.completed{
+    background-color: #4cbe697a;
+    color: #000
+}
+
+#totalCredits, #creditsEarned{
+    text-align: center;
+}
+
+/*********************** FOOTER ***********************/
+footer{
+    padding: 1rem 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social-media a{
+    display: flex;
+    border: 1px dashed black;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media a:hover{
+    background-color: #ccc;
+}
+
+.social-media img{
+    width: 40px;
+    height: 40px;
+}
