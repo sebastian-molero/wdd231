@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Lato;
+    background-color: #eeea;
+    margin: auto
+}
+
+header{
+    text-align: center;
+    margin: 2rem 0 1rem 0
+}
+
+#cards{
+    padding: 2rem 1.8rem;
+    display: grid;
+    gap: 1.4rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+}
+
+#card{
+    padding: 20px;
+    background-color: #222322;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
+    border-radius: 12px;
+    width: 90%;
+    margin: auto;
+    box-shadow: -15px 15px 20px  #0004;
+}
+h2{
+    transition: font-size 1s;
+}
+#card:hover h2{
+    font-size: 2em;
+
+}
+
+#card img{
+    margin-top: 1rem;
+    max-height: 300px;
+    max-width: 80%;
+    border-radius: 50px;
+    box-shadow: 0 0 20px 0 #fffb;
+}
+
+footer{
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (300px <= width <= 788px) {
+    #card{
+        max-width: 70%;
+        margin: auto;
+    }
+}

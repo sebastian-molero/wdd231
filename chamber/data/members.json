@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Café Colonial",
+            "address": "Cra 10 #12-34",
+            "phone": "+57 310 4567890",
+            "website": "https://cafecolonial.com",
+            "image": "images/cafecolonial.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Hostal El Molino",
+            "address": "Cl 8 #7-20",
+            "phone": "+57 312 9876543",
+            "website": "https://hostalelmolino.com",
+            "image": "images/hostalelmolino.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Artesanias Leyva",
+            "address": "Plaza Mayor #5-55",
+            "phone": "+57 318 2233445",
+            "website": "https://artesaniasleyva.com",
+            "image": "images/artesaniasleyva.jpg",
+            "membership": 1
+        },
+        {
+            "name": "Queseria La Roca",
+            "address": "Km 2 Via Arcabuco",
+            "phone": "+57 301 4432980",
+            "website": "https://queserialaroca.com",
+            "image": "images/queserialaroca.jpg",
+            "membership": 2
+        },
+        {
+            "name": "Tours Andes Magicos",
+            "address": "Cl 10 #9-45",
+            "phone": "+57 314 5566778",
+            "website": "https://andesmagicos.com",
+            "image": "images/andesmagicos.jpg",
+            "membership": 3
+        },
+        {
+            "name": "Spa Villa Serena",
+            "address": "Vereda El Roble",
+            "phone": "+57 319 7788990",
+            "website": "https://villaserenaspa.com",
+            "image": "images/villaserena.jpg",
+            "membership": 1
+        },
+        {
+            "name": "Viñedo del Sol",
+            "address": "Finca El Sol, Vía Gachantivá",
+            "phone": "+57 315 6655443",
+            "website": "https://vinodelsol.com",
+            "image": "images/vinodesol.jpg",
+            "membership": 3
+        }
+    ]   
+}   

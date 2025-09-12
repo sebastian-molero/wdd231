@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory | Villa de Leyva Chamber of Commerce</title>
+    <meta name="description" content="Find local business, shops, hotels and services affiliated with the Villa de Leyva Chamber of Commerce. Support local commerce and explore opportunities.">
+    <meta name="author" content="Sebastian Molero">
+
+    <!--Icon Here-->
+    <link rel="icon" href="images/chamber_icon.ico">
+    
+    <!--Open Graph Here-->
+    <meta property="og:title" content="Business Directory | Villa de Leyva Chamber of Commerce">
+    <meta property="og:description" content="Explore business affiliated with the Villa de Leyva Chamber of Commerce.">
+    <meta property="og:image" content="images/open_graph_image.jpg">
+    <meta property="og:url" content="https://sebastian-molero.github.io/wdd231/">
+
+    <!--Fonts Here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
+    <!--Styles Here-->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+
+    <!--Scripts Here-->
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Villa de Leyva Chamber of Commerce Logo" class="logo">
+        <span>Villa de Leyva Chamber of Commerce</span>
+        <nav class="navigation" id="nav-bar">
+            <ul class="nav-list">
+                <li class="list-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="current nav-link">Directory</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="nav-link">Join</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="nav-link">Discover</a>
+                </li>
+            </ul>
+        </nav>
+        <button id="ham-Btn" class="hamburger" aria-label="display menu"></button>
+    </header>
+    <!--Hero Section-->
+    <section class="hero">
+        <picture>
+            <source srcset="images/hero_large.png" media="(min-width: 1000px)">
+            <source media="(min-width: 500px)" srcset="images/hero_medium.jpg">
+            <img src="images/hero_small.jpg" alt="Villa de Leyva Landscape">
+        </picture>
+        <button id="cta-btn">Discover More</button>
+    </section>
+    <main>
+        <h1>Business Directory</h1>
+        <div class="view-toggle">
+            <button id="gridViewBtn" class="active">Grid</button>
+            <button id="listViewBtn">List</button>
+        </div>
+        <section id="directory" class="directory-grid"></section>
+    </main>
+    <footer>
+        <div class="contact">
+            <h3>Contact</h3>
+            <p><strong>Villa de Leyva Chamber of Commerce</strong></p>
+            <p>Address: Cl 10 #12-34, Villa de Leyva, Boyaca, Colombia.</p>
+            <p>Phone: +57 310 1234567</p>
+            <p>Email: contact@villadeleyva.com</p>
+        </div>
+        <div class="social-media">
+            <a href="https://youtube.com/villadeleyvachamber" target="_blank"><img src="images/youtube.svg" alt="visit our youtube channel"></a>
+            <a href="https://facebook.com/villadeleyvachamber" target="_blank"><img src="images/facebook.svg" alt="visit our facebook account"></a>
+            <a href="https://x.com/villadeleyvachamber" target="_blank"><img src="images/twitter-alt.svg" alt="visit our twitter account"></a>
+            <a href="https://instagram.com/villadeleyvachamber" target="_blank"><img src="images/instagram.svg" alt="visit our instagram account"></a>
+        </div>
+        <div class="bottom">
+            <h3>Brigham Young University</h3>
+            <p>WDD231 Chamber Project</p>
+            <p>&copy; <span id="year"></span> • Sebastian Molero • Bogota, Colombia</p>
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+</body>
+</html>
