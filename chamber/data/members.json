@@ -5,7 +5,7 @@
             "address": "Cra 10 #12-34",
             "phone": "+57 310 4567890",
             "website": "https://cafecolonial.com",
-            "image": "images/cafecolonial.jpg",
+            "image": "images/cafecolonial.webp",
             "membership": 3
         },
         {
@@ -13,7 +13,7 @@
             "address": "Cl 8 #7-20",
             "phone": "+57 312 9876543",
             "website": "https://hostalelmolino.com",
-            "image": "images/hostalelmolino.jpg",
+            "image": "images/hostalelmolino.webp",
             "membership": 2
         },
         {
@@ -21,7 +21,7 @@
             "address": "Plaza Mayor #5-55",
             "phone": "+57 318 2233445",
             "website": "https://artesaniasleyva.com",
-            "image": "images/artesaniasleyva.jpg",
+            "image": "images/artesaniasleyva.webp",
             "membership": 1
         },
         {
@@ -29,7 +29,7 @@
             "address": "Km 2 Via Arcabuco",
             "phone": "+57 301 4432980",
             "website": "https://queserialaroca.com",
-            "image": "images/queserialaroca.jpg",
+            "image": "images/queserialaroca.webp",
             "membership": 2
         },
         {
@@ -37,7 +37,7 @@
             "address": "Cl 10 #9-45",
             "phone": "+57 314 5566778",
             "website": "https://andesmagicos.com",
-            "image": "images/andesmagicos.jpg",
+            "image": "images/andesmagicos.webp",
             "membership": 3
         },
         {
@@ -45,7 +45,7 @@
             "address": "Vereda El Roble",
             "phone": "+57 319 7788990",
             "website": "https://villaserenaspa.com",
-            "image": "images/villaserena.jpg",
+            "image": "images/villaserena.webp",
             "membership": 1
         },
         {
@@ -53,7 +53,7 @@
             "address": "Finca El Sol, Vía Gachantivá",
             "phone": "+57 315 6655443",
             "website": "https://vinodelsol.com",
-            "image": "images/vinodesol.jpg",
+            "image": "images/vinodesol.webp",
             "membership": 3
         }
     ]   

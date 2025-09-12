@@ -45,6 +45,8 @@ const displayMembers = (members => {
         img.setAttribute('src', `${member.image}`);
         img.setAttribute('alt', `${member.name}`);
         img.setAttribute('loading', 'lazy');
+        img.setAttribute('width', '200');
+        img.setAttribute('height', '100');
 
         h2.textContent = `${member.name}`;
         address.innerHTML = `<strong>Address:</strong> ${member.address}`;

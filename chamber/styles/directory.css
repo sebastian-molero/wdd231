@@ -258,8 +258,6 @@ h3{
     background-color: rgba(219, 218, 218, 0.788);
 }
 
-
-
 /********************* MEDIA QUERIES *************************/
 @media screen and (min-width: 900px) {
     .hamburger{
@@ -284,8 +282,11 @@ h3{
         border: none;
         font-size: 1.18rem;
         transition: color .7s ease;
-
-    }
+        -webkit-transition: color .7s ease;
+        -moz-transition: color .7s ease;
+        -ms-transition: color .7s ease;
+        -o-transition: color .7s ease;
+}
     
     .nav-link:hover{
         letter-spacing: inherit;
