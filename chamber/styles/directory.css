@@ -214,7 +214,7 @@ h1{
 .directory-list p{
     font-size: 90%;
 }
-.directory-list p > strong, p >br{
+.directory-list p > strong, .directory-list br{
     display: none;
 }
 

@@ -32,18 +32,8 @@ const displayMembers = (members => {
 
         card.classList.add('member-card');
 
-        if (card.membership === 3) {
-            card.classList.add('gold');
-        }
-        else if (card.membership === 2) {
-            card.classList.add('silver');
-        }
-        else {
-            card.classList.add('regular');
-        }
-
         img.setAttribute('src', `${member.image}`);
-        img.setAttribute('alt', `${member.name}`);
+        img.setAttribute('alt', '');
         img.setAttribute('loading', 'lazy');
         img.setAttribute('width', '200');
         img.setAttribute('height', '100');
