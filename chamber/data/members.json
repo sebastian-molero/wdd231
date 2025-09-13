@@ -5,7 +5,11 @@
             "address": "Cra 10 #12-34",
             "phone": "+57 310 4567890",
             "website": "https://cafecolonial.com",
-            "image": "images/cafecolonial.webp",
+            "image": {
+                "source": "images/cafecolonial.webp",
+                "width": "250",
+                "height": "167"
+            },
             "membership": 3
         },
         {
@@ -13,7 +17,11 @@
             "address": "Cl 8 #7-20",
             "phone": "+57 312 9876543",
             "website": "https://hostalelmolino.com",
-            "image": "images/hostalelmolino.webp",
+            "image": {
+                "source": "images/hostalelmolino.webp",
+                "width": "220",
+                "height": "149"
+            },
             "membership": 2
         },
         {
@@ -21,7 +29,11 @@
             "address": "Plaza Mayor #5-55",
             "phone": "+57 318 2233445",
             "website": "https://artesaniasleyva.com",
-            "image": "images/artesaniasleyva.webp",
+            "image": {
+            "source": "images/artesaniasleyva.webp",
+            "width": "286",
+            "height": "176"
+            },
             "membership": 1
         },
         {
@@ -29,7 +41,11 @@
             "address": "Km 2 Via Arcabuco",
             "phone": "+57 301 4432980",
             "website": "https://queserialaroca.com",
-            "image": "images/queserialaroca.webp",
+            "image": {
+                "source": "images/queserialaroca.webp",
+                "width": "220",
+                "height": "146"
+            },
             "membership": 2
         },
         {
@@ -37,7 +53,11 @@
             "address": "Cl 10 #9-45",
             "phone": "+57 314 5566778",
             "website": "https://andesmagicos.com",
-            "image": "images/andesmagicos.webp",
+            "image": {
+                "source": "images/andesmagicos.webp",
+                "width": "200",
+                "height": "109"                
+            },
             "membership": 3
         },
         {
@@ -45,15 +65,22 @@
             "address": "Vereda El Roble",
             "phone": "+57 319 7788990",
             "website": "https://villaserenaspa.com",
-            "image": "images/villaserena.webp",
-            "membership": 1
+            "image": {
+                "source":"images/villaserena.webp",
+                "width": "240",
+                "height": "180"
+            },"membership": 1
         },
         {
             "name": "Viñedo del Sol",
             "address": "Finca El Sol, Vía Gachantivá",
             "phone": "+57 315 6655443",
             "website": "https://vinodelsol.com",
-            "image": "images/vinodesol.webp",
+            "image": {
+                "source": "images/vinodesol.webp",
+                "width": "230",
+                "height": "153"
+            },
             "membership": 3
         }
     ]   

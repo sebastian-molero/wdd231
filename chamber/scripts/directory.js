@@ -32,11 +32,11 @@ const displayMembers = (members => {
 
         card.classList.add('member-card');
 
-        img.setAttribute('src', `${member.image}`);
+        img.setAttribute('src', `${member.image.source}`);
         img.setAttribute('alt', '');
         img.setAttribute('loading', 'lazy');
-        img.setAttribute('width', '200');
-        img.setAttribute('height', '100');
+        img.setAttribute('width', `${member.image.width}`);
+        img.setAttribute('height', `${member.image.height}`);
 
         h2.textContent = `${member.name}`;
         address.innerHTML = `<strong>Address:</strong> ${member.address}`;
