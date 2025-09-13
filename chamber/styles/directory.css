@@ -3,28 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 h1, h2, h3{
-    font-family: Playfair, serif;
+    font-family: 'Playfair', serif;
     text-wrap: balance;
 }
-
 p{
     font-family: 'Open Sans', sans-serif;
     text-wrap: pretty;
 }
-
 body{
     max-width: 80%;
     margin: auto;
     background-color: #f9f6f0;
     color: #2f2f2f;
 }
-
 img{
     max-width: 100%;
+    height: auto;
 }
-
 /********************** HEADER ****************************/
 header{
     padding: .3rem .6rem;
@@ -33,36 +29,30 @@ header{
     gap: 1rem 20px;
     align-items: center;
 }
-
 .logo{
     display: block;
     width: 100%;
     height: auto;
     border-radius: 3px;
 }
-
 header span{
     font-size: 1.2rem;
 }
-
 .navigation{
     grid-row: 2;
     grid-column: -1/1;
     display: none;
 }
-
 .navigation.show{
     display: block;
 }
-
 .nav-list{
     list-style: none;
     display: flex;
     flex-direction: column;
 }
-
 .nav-link{
-    color: var(--text_font);
+    color: #2f2f2f;
     border-bottom: 2px solid #302f2fe5;
     display: block;
     text-align: center;
@@ -71,49 +61,38 @@ header span{
     transition: color .7s ease, letter-spacing .4s ease;
     font-size: 1.3rem;
 }
-
 .current{
     background-color: #bdbcbc60;
 }
-
 .nav-link:hover{
     color: #6e0b0bd5;
     letter-spacing: .35rem;
 }
-
-
 /********************** HAMBURGER MENU ***********************/
-
 .hamburger{
     border: none;
     background: none;
     font-size: 1.6rem;
     color: #3d405b;
     cursor: pointer;
-    font-family: var(--text_font);
 }
 .hamburger::before{
     content: "\2630";
 }
-
 .hamburger.show::before{
     content: "\00D7";
 }
-
 /************************** HERO ******************************/
 .hero{
     position: relative;
 }
-
 picture img{
     display: block;
     width: 97%;
-    height: auto;
     margin: auto;
     max-height: 500px;
     border-radius: 4px;
 }
-
 #cta-btn{
     padding: 4px 5px;
     position: absolute;
@@ -125,24 +104,20 @@ picture img{
     background: linear-gradient(rgb(119, 39, 39), rgb(71, 4, 4));
     color: #fff;
 }
-
 /******************************** GRID & LIST ****************************/
 main{
     margin-top: 2rem;
 }
-
 h1{
     text-align: center;
     font-size: 2.5rem
 }
-
 .view-toggle{
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-bottom: 1rem;
 }
-
 .view-toggle button{
     background: rgba(155, 154, 154, 0.637);
     border: none;
@@ -154,13 +129,11 @@ h1{
     margin: .8rem 0;
     cursor: pointer;
 }
-
 .view-toggle .active{
     background: linear-gradient(rgb(119, 39, 39), rgb(71, 4, 4));
     box-shadow: 0 7px 10px  #00000088;
     color: #fff
 }
-
 .directory-grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -168,7 +141,6 @@ h1{
     padding: 1rem;
     margin-top: 60px;
 }
-
 .directory-grid .member-card{
         display: flex;
         flex-direction: column;
@@ -180,49 +152,41 @@ h1{
         transition: transform 0.3s ease;
         border-radius: 4px;
 }
-
 .directory-grid .member-card:hover {
         transform: translateY(-10px);
 }
-
 .directory-grid .member-card img{
         border-radius: 4px;
         width: 100%;
         height: 170px;
         object-fit: cover;
     }
-
 .directory-list{
     display: flex;
     flex-direction: column;
     background-color: rgba(136, 135, 135, 0.212);
-    padding: 1rem 1.5rem 2rem 1.5rem;
+    padding: 1rem 1.5rem 2rem;
     border-radius: 4px;
     margin-top: 60px;
     box-shadow: 0 0 30px 0;
 }
-
 .directory-list section{
     display: grid;
     align-items: end;
     grid-template-columns: 2fr repeat(3, 1fr);
     gap: 1rem;
-    margin: 0;
     padding: 0.25rem;
     border-bottom: 3px solid rgba(82, 2, 2, 0.774);
 }
-
 .directory-list p{
     font-size: 90%;
 }
 .directory-list p > strong, .directory-list br{
     display: none;
 }
-
 .directory-list img{
-        display: none;
+    display: none;
 }
-
 /**************************** FOOTER ************************/
 footer{
     margin: 40px 0 30px;
@@ -231,36 +195,31 @@ footer{
     text-align: center;
     gap: 1rem;
 }
-
 h3{
     font-size: 1.5rem;
 }
-
 .contact, .bottom{
     display: flex;
     flex-direction: column;
     gap: .3rem;
 }
-
 .social-media{
     display: flex;
     gap: .5rem;
     justify-content: center;
 }
-
+.social-media a{
+    width: 60px;
+}
 .social-media img{
     width: 60px;
-    height: auto;
     padding: 10px;
     border-radius: 3px;
     border: 1px solid rgb(124, 32, 32);
-    width: 60px;
 }
-
 .social-media img:hover{
     background-color: rgba(219, 218, 218, 0.788);
 }
-
 /********************* MEDIA QUERIES *************************/
 @media screen and (min-width: 900px) {
     .hamburger{
@@ -274,7 +233,6 @@ h3{
         grid-row: 1;
         grid-column: 3/4;
     }
-    
     .nav-list{
         flex-direction: row;
         gap: 5px;
@@ -285,59 +243,43 @@ h3{
         border: none;
         font-size: 1.18rem;
         transition: color .7s ease;
-        -webkit-transition: color .7s ease;
-        -moz-transition: color .7s ease;
-        -ms-transition: color .7s ease;
-        -o-transition: color .7s ease;
 }
     
     .nav-link:hover{
         letter-spacing: inherit;
     }
-
     .current{
         border-bottom: 2px solid #2f2f2f;
         background-color: transparent;
     }
-
     footer{
         flex-direction: row;
         padding-bottom: 30px;
         gap: 1.7rem;
         text-align: left;
     }
-
     .contact, .bottom{
         gap: 1rem
     }
-
-    .contact{
-        text-align: left;
-    }
-
     .social-media{
         align-self: center;
         flex-wrap: wrap;
     }
 }
-
 @media screen and (min-width: 500px) {
     #cta-btn{
         padding: 10px 12px;
         top: 80%
     }
 }
-
 @media screen  and (max-width: 560px){
     .directory-list{
         grid-template-columns: 2fr 1fr 1fr;
     }
-
     .directory-list section{
             grid-template-columns: 2fr 1fr 1fr;
             font-size: .8rem;
     }
-
     .directory-list p:last-of-type{
             display: none;
         }
