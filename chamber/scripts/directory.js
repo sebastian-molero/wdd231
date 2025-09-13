@@ -19,8 +19,11 @@ async function getMembers(membersJson) {
     displayMembers(data.members);
 };
 
+
 const displayMembers = (members => {
     directory.innerHTML = "";
+    
+    const isListView = directory.classList.contains('directory-list');
 
     members.forEach(member => {
         const card = document.createElement('section');
@@ -38,17 +41,42 @@ const displayMembers = (members => {
         img.setAttribute('width', `${member.image.width}`);
         img.setAttribute('height', `${member.image.height}`);
 
+        const addressText = `<strong>Address:</strong><br> ${member.address}`;
+        const contactText = `<strong>Phone Number:</strong><br> ${member.phone}`;
+        const websiteText = `<strong>Website: </strong><br><a href="${member.website}" target="_blank">${member.name}</a>`;
+
         h2.textContent = `${member.name}`;
-        address.innerHTML = `<strong>Address:</strong> ${member.address}`;
-        contact.innerHTML = `<strong>Phone Number:</strong><br> ${member.phone}`;
-        website.innerHTML = `<strong>Website: </strong><a href="${member.website}" target="_blank">${member.name}</a>`;
 
-        card.appendChild(img);
-        card.appendChild(h2);
-        card.appendChild(address);
-        card.appendChild(contact);
-        card.appendChild(website);
+        address.innerHTML = addressText;
+        contact.innerHTML = contactText;
+        website.innerHTML = websiteText;
+            
+        if (isListView) {
+            const ul = document.createElement('ul');
+            
+            const li1 = document.createElement('li')
+            li1.innerHTML = addressText;
 
+            const li2 = document.createElement('li')
+            li2.innerHTML = contactText;
+
+            const li3 = document.createElement('li')
+            li3.innerHTML = websiteText;
+
+            ul.appendChild(li1)
+            ul.appendChild(li2)
+            ul.appendChild(li3)
+
+            card.appendChild(h2);
+            card.appendChild(ul)
+        }
+        else {
+            card.appendChild(img);
+            card.appendChild(h2);
+            card.appendChild(address);
+            card.appendChild(contact);
+            card.appendChild(website);
+        }
         directory.appendChild(card);
     });
 })
@@ -58,6 +86,8 @@ gridBtn.addEventListener('click', function () {
     directory.classList.remove('directory-list');
     gridBtn.classList.add('active');
     listBtn.classList.remove('active');
+
+    getMembers(membersJson)
 });
 
 listBtn.addEventListener('click', function () {
@@ -65,6 +95,8 @@ listBtn.addEventListener('click', function () {
     directory.classList.remove('directory-grid');
     listBtn.classList.add('active');
     gridBtn.classList.remove('active');
+
+    getMembers(membersJson)
 })
 
 
