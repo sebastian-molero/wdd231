@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3{
+    font-family: 'Playfair', serif;
+    text-wrap: balance;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    text-wrap: pretty;
+}
+body{
+    max-width: 80%;
+    margin: auto;
+    background-color: #f9f6f0;
+    color: #2f2f2f;
+}
+header, main, footer{
+    margin: auto;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/****************************** HEADER ****************************/
+
+header{
+    padding: .3rem .6rem;
+    display: grid;
+    grid-template-columns: 60px auto 24px;
+    gap: 1rem 20px;
+    align-items: center;
+}
+
+.logo{
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+}
+
+header span{
+    font-size: 1.2rem;
+}
+
+.navigation {
+    display: none;
+    grid-row: 2;
+    grid-column: -1/1;
+}
+
+.navigation.show{
+    display: block;
+}
+
+.nav-list{
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    list-style: none;
+}
+
+.nav-link{
+    display: block;
+    text-align: center;
+    padding: .7rem 0;
+    text-decoration: none;
+    color: #2f2f2f;
+    border-bottom: 2px solid #302f2fe5;
+    font-size: 1.3rem;
+    transition: color .7s ease, letter-spacing .7s ease;
+}
+
+.current{
+    background-color: #bdbcbc60;
+}
+
+.nav-link:hover{
+    color: #6e0b0bd5;
+    letter-spacing: .35rem;
+}
+
+.hamburger{
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: #3d405b;
+    cursor: pointer;
+}
+
+.hamburger::before{
+    content: "\2630";
+}
+
+.hamburger.show::before{
+    content: "\00D7";
+}
+
+.hero img{
+    display: block;
+    width: 97%;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 0 6px 20px #0007;
+}
+
+/*********** CALL TO ACTION *******************/
+
+.cta{
+    display: block;
+    margin: 20px auto;
+    padding: .7rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(rgb(119, 39, 39), rgb(71, 4, 4));
+    color: #fff;
+    cursor: pointer;
+}
+
+/*********************** EVENTS *********************/
+
+.events{
+    margin: 1rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.event__card{
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    text-align: center;
+    border: 2px solid #830f05ef; 
+    padding: 1rem .5rem;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px 0 #0004;
+}
+
+.event__card h3{
+    font-size: 1.4rem;
+}
+
+/********************* WEATHER ***************************/
+
+.weatherInfo{
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+#current__weather, #forecast{
+    padding: 1rem 2rem;
+    border: 2px solid #b83a2e;
+    background-color: rgba(209, 208, 113, 0.623);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+#current__weather{
+    justify-content: space-around;
+}
+
+#weather-icon{
+    width: 130px;
+    height: 130px;
+}
+
+#weather-data{
+    list-style: none;
+}
+
+#forecast{
+    flex-direction: column;
+    justify-self: center;
+}
+
+#forecast p{
+    flex-grow: 1;
+}
+
+/************************ MEMBERS **************************/
+
+#members{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+#members section{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem; 
+    text-align: center;
+    border: 2px solid rgba(83, 18, 18, 0.822);
+    background-color: #ffffffe7;
+    padding: .5rem;
+}
+
+#members section img{
+        border-radius: 4px;
+        margin: auto;
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+/*************** FOOTER **************************/
+footer{
+    min-height: 200px;
+    margin: 40px 0 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+.contact, .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.social-media{
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+}
+.social-media img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(124, 32, 32);
+}
+.social-media img:hover{
+    background-color: rgba(219, 218, 218, 0.788);
+}
+
+
+/********************** MEDIA QUERIES *******************/
+
+@media screen and (min-width: 900px) {
+    .hamburger{
+        display: none;
+    }
+    header{
+        grid-template-columns: 60px auto auto;
+    }
+    .navigation{
+        display: block;
+        grid-row: 1;
+        grid-column: 3/4;
+    }
+    .nav-list{
+        flex-direction: row;
+        gap: 5px;
+        justify-content: end;
+    }
+    .nav-link{
+        padding: .4rem;
+        border: none;
+        font-size: 1.18rem;
+        transition: color .7s ease;
+}
+    
+    .nav-link:hover{
+        letter-spacing: inherit;
+    }
+    .current{
+        border-bottom: 2px solid #2f2f2f;
+        background-color: transparent;
+    }
+    footer{
+        flex-direction: row;
+        padding-bottom: 30px;
+        gap: 1.7rem;
+        text-align: left;
+    }
+    .contact, .bottom{
+        gap: 1rem
+    }
+    .social-media{
+        align-self: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .weatherInfo{
+        grid-template-columns: 2fr 1fr;
+    }
+}

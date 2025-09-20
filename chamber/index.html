@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Villa de Leyva Chamber Of Commerce</title>
+    <meta name="description" content="Explore the Villa de Leyva Chamber of Commerce website to learn about local businesses, events, and opportunities in the charming town of Villa de Leyva, Colombia.">
+    <meta name="author" content="Sebastian Molero">
+
+    <!-- FONTS HERE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    
+    <!-- STYLES HERE -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/home.css">
+
+    <!-- SCRIPTS HERE -->
+    <script src="scripts/home.js" defer></script>
+
+    <!-- ICON HERE -->
+    <link rel="icon" href="images/chamber_icon.ico">
+
+    <!-- OPEN GRAPH HERE -->
+    <meta property="og:title" content="Home | Villa de Leyva Chamber Of Commerce">
+    <meta property="og:description" content="Explore the Villa de Leyva Chamber of Commerce website to learn about local businesses, events, and opportunities in the charming town of Villa de Leyva, Colombia.">
+    <meta property="og:image" content="https://sebastian-molero.github.io/wdd231/chamber/images/open_graph_image.webp">
+    <meta property="og:url" content="https://sebastian-molero.github.io/wdd231/chamber/directory">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Villa de Leyva Chamber of Commerce Logo" class="logo" width="156" height="81"> 
+        <span>Villa de Leyva Chamber of Commerce</span>
+        <nav class="navigation" id="nav-bar">
+            <ul class="nav-list">
+                <li class="list-item">
+                    <a href="#" class="current nav-link">Home</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class=" nav-link">Directory</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="nav-link">Join</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="nav-link">Discover</a>
+                </li>
+            </ul>
+        </nav>
+        <button id="ham-Btn" class="hamburger" aria-label="display menu"></button>
+    </header>
+
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero_large.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero_medium.webp" media="(min-width: 500px)">
+            <img src="images/hero_small.webp" alt="Villa de Leyva Landscape" width="480" height="332">
+        </picture>
+    </div>
+
+    <button class="cta">Discover More</button>
+
+    <main>
+        <div class="events">
+            <section class="event__card">
+                <h3>Wind and Kite Festival</h3> 
+                <p>Watch the skies fill with vibrant kites at this thrilling outdoor event in Villa de Leyva.</p>
+                <p><strong>Date:</strong> 16/08 - 18/08</p>
+            </section>
+
+            <section class="event__card">
+                <h3>Festival of Lights</h3>
+                <p>Experience the magic of Villa de Leyva as its streets glow with stunning light displays!</p>
+                <p><strong>Date:</strong> 07/12 - 08/12</p>
+            </section>
+
+            <section class="event__card">
+                <h3>Jazz Festival</h3>
+                <p>Sway to smooth jazz beats in the heart of Villa de Leyva’s historic center.</p>
+                <p><strong>Date:</strong> 26/06 - 29/06</p>
+            </section>
+
+            <section class="event__card">
+                <h3>Patron Saint Festivities of the Virgin of Carmen</h3>
+                <p>Join in the colorful processions and lively celebrations honoring the Virgin of Carmen.</p>
+                <p><strong>Date:</strong> 12/07 - 17/07</p>
+            </section>
+        </div>
+        <div class="weatherInfo">
+            <section id="current__weather"></section>
+            <section id="forecast"></section>
+        </div>
+        <div id="members"></div>
+    </main>
+    
+    <footer>
+        <div class="contact">
+            <h3>Contact</h3>
+            <p><strong>Villa de Leyva Chamber of Commerce</strong></p>
+            <p>Address: Cl 10 #12-34, Villa de Leyva, Boyaca, Colombia.</p>
+            <p>Phone: +57 310 1234567</p>
+            <p>Email: contact@villadeleyva.com</p>
+        </div>
+        <div class="social-media">
+            <a href="https://youtube.com/villadeleyvachamber" target="_blank"><img width="60" height="60" src="images/youtube.svg" alt="visit our youtube channel" loading="lazy"></a>
+            <a href="https://facebook.com/villadeleyvachamber" target="_blank"><img src="images/facebook.svg" alt="visit our facebook account" width="60" height="60" loading="lazy"></a>
+            <a href="https://x.com/villadeleyvachamber" target="_blank"><img src="images/twitter-alt.svg" alt="visit our twitter account" width="60" height="60" loading="lazy"></a>
+            <a href="https://instagram.com/villadeleyvachamber" target="_blank"><img src="images/instagram.svg" alt="visit our instagram account" width="60" height="60" loading="lazy"></a>
+        </div>
+        <div class="bottom">
+            <h3>Brigham Young University</h3>
+            <p>WDD231 Chamber Project</p>
+            <p>&copy; <span id="year"></span> • Sebastian Molero • Bogota, Colombia</p>
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+    </body>
+</html>
