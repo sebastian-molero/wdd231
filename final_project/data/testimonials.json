@@ -1,0 +1,73 @@
+{
+    "testimonials": [
+        {
+            "name": "Emily R.",
+            "quote": "Adopting Luna changed our lives. She's the heart of our home now.",
+            "date": "July 15, 2025",
+            "location": "Austin, TX"
+        },
+
+        {
+            "name": "Carlos M.",
+            "quote": "Max has brought so much love and laughter into our lives.",
+            "date": "June 28, 2025",
+            "location": "San Diego, CA"
+        },
+
+        {
+            "name": "Sarah T.",
+            "quote": "We thought we were rescuing Nala, but she rescued us.",
+            "date": "May 10, 2025",
+            "location": "Portland, OR"
+        },
+        
+        {
+            "name": "James K.",
+            "quote": "Rocky is the most loyal friend I could ever ask for.",
+            "date": "August 3, 2025",
+            "location": "Denver, CO"
+        },
+
+        {
+            "name": "Aisha B.",
+            "quote": "Canela bonded instantly with our kids. She's family now.",
+            "date": "July 2, 2025",
+            "location": "Miami, FL"
+        },
+
+        {
+            "name": "Liam H.",
+            "quote": "Toby reminds us every day that second chances are worth it.",
+            "date": "September 1, 2025",
+            "location": "Salt Lake City, UT"
+        },
+
+        {
+            "name": "Mei L.",
+            "quote": "Milo brings calm, joy, and so many cuddles. He's perfect.",
+            "date": "June 5, 2025",
+            "location": "Settle, WA"
+        },
+
+        {
+            "name": "Jonathan P.",
+            "quote": "Maya made our house feel like a home again.",
+            "date": "August 18, 2025",
+            "location": "Chicago, IL"
+        },
+
+        {
+            "name": "Nina S.",
+            "quote": "Simba walks beside me every day - my best friend and guardian.",
+            "date": "July 27, 2025",
+            "location": "Toronto, Canada"
+        },
+
+        {
+            "name": "Oliver D.",
+            "quote": "Kira is pure energy and love. We can't imagine life without her.",
+            "date": "June 5, 2025",
+            "location": "Seattle, WA"
+        }
+    ]
+}

@@ -56,6 +56,11 @@ function displayCourses(filteredCourses) {
         if (course.completed) div.classList.add('completed');
 
         div.innerHTML = `<strong>${course.code}</strong><br>${course.name}`
+
+        div.addEventListener('click', () => {
+            displayCourseDetails(course)
+        });
+
         container.appendChild(div);
     });
 
@@ -73,3 +78,18 @@ document.getElementById('cse').addEventListener('click', () => {
     displayCourses(courses.filter(course => course.category === "CSE"))
 });
 
+
+const courseDetails = document.getElementById('course-details');
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">X</button>
+    <h2>${course.code}</h2>
+    <h3>${course.name}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p >
+    `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener('click', () => courseDetails.close());
+}

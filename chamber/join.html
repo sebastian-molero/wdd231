@@ -14,10 +14,10 @@
     
     <!-- STYLES HERE -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/join.css">
 
     <!-- SCRIPTS HERE -->
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 
     <!-- ICON HERE -->
     <link rel="icon" href="images/chamber_icon.ico">
@@ -36,13 +36,13 @@
         <nav class="navigation" id="nav-bar">
             <ul class="nav-list">
                 <li class="list-item">
-                    <a href="#" class="current nav-link">Home</a>
+                    <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="list-item">
                     <a href="directory.html" class=" nav-link">Directory</a>
                 </li>
                 <li class="list-item">
-                    <a href="join.html" class="nav-link">Join</a>
+                    <a href="#" class="current nav-link">Join</a>
                 </li>
                 <li class="list-item">
                     <a href="#" class="nav-link">Discover</a>
@@ -59,43 +59,82 @@
             <img src="images/hero_small.webp" alt="Villa de Leyva Landscape" width="480" height="332">
         </picture>
     </div>
-
-    <button class="cta">Discover More</button>
-
     <main>
-        <h1>Welcome to Villa de Leyva Chamber of Commerce</h1>
-        <div class="events">
-            <section class="event__card">
-                <h3>Wind and Kite Festival</h3> 
-                <p>Watch the skies fill with vibrant kites at this thrilling outdoor event in Villa de Leyva.</p>
-                <p><strong>Date:</strong> 16/08 - 18/08</p>
-            </section>
+        <h1>Join Our Chamber</h1>
 
-            <section class="event__card">
-                <h3>Festival of Lights</h3>
-                <p>Experience the magic of Villa de Leyva as its streets glow with stunning light displays!</p>
-                <p><strong>Date:</strong> 07/12 - 08/12</p>
-            </section>
+        <form action="thankyou.html" method="get" class="membership-form">
+            <fieldset>
+                <legend>Membership Application</legend>
+                
+                <label>First Name:
+                    <input type="text" name="firstName" required title="First Name" autocomplete="given-name">
+                </label>
 
-            <section class="event__card">
-                <h3>Jazz Festival</h3>
-                <p>Sway to smooth jazz beats in the heart of Villa de Leyva’s historic center.</p>
-                <p><strong>Date:</strong> 26/06 - 29/06</p>
-            </section>
+                <label>Last Name
+                    <input type="text" name="lastName" required title="Last Name" autocomplete="family-name">
+                </label>
 
-            <section class="event__card">
-                <h3>Patron Saint Festivities of the Virgin of Carmen</h3>
-                <p>Join in the colorful processions and lively celebrations honoring the Virgin of Carmen.</p>
-                <p><strong>Date:</strong> 12/07 - 17/07</p>
-            </section>
-        </div>
-        <div class="weatherInfo">
-            <section id="current__weather"></section>
-            <section id="forecast"></section>
-        </div>
-        <div id="members"></div>
+                <label>Organization Title:
+                    <input type="text" name="orgTitle" pattern="[A-Za-z\s\-]{7,}" title="Organizational Title (only letters, hyphens and spaces, min 7 chars)" autocomplete="organization-title" />
+                </label>
+
+                <label>Email Address:
+                    <input type="email" name="email" required title="Email Address" autocomplete="email" placeholder="example@gmail.com">
+                </label>
+
+                <label>Mobile Phone:
+                    <input type="tel" name="phone" required title="Mobile Phone Number" autocomplete="tel">
+                </label>
+
+                <label>Business Name:
+                    <input type="text" name="businessName" required title="Organization Name" autocomplete="organization">
+                </label>
+
+                <label>Membership Level:
+                    <select name="membershipLevel" required>
+                        <option value=""  selected disabled >Select Membership Level </option>
+                        <option value="NP">NP Membership</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                    </select>
+                </label>
+
+                <label>Business Description:
+                    <textarea name="description" title="Business Description"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Apply Now">
+            </fieldset>
+        </form>
+        
+        <section class="memberships">
+            <div class="card" >
+                <h3>Non Profit Membership Level</h3>
+                <button id="openButton1">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Bronze Membership Level</h3>
+                <button id="openButton2">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Silver Membership Level</h3>
+                <button id="openButton3">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Gold Membership Level</h3>
+                <button id="openButton4">Learn More</button>
+            </div>
+
+            <dialog id="dialogBox">
+                <div></div>
+                <button id="closeDialog" aria-label="close dialog"></button>
+            </dialog>
+        </section>
     </main>
-    
+
     <footer>
         <div class="contact">
             <h3>Contact</h3>
@@ -116,7 +155,7 @@
             <p>&copy; <span id="year"></span> • Sebastian Molero • Bogota, Colombia</p>
             <p id="lastModified"></p>
         </div>
-
     </footer>
+    
     </body>
 </html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A New Companion | Home Page</title>
+    <meta name="description" content="Find your new best friend. Discover dogs, cats, and other pets looking for loving homes. Adopt now.">
+    <meta name="author" content="Sebastian Molero">
+
+    <!--Open Graph Here-->
+    <meta property="og:title" content="A New Companion | Home Page">
+    <meta property="og:description" content="Find your new best friend. Discover dogs, cats, and other pets looking for loving homes. Adopt now.">
+    <meta property="og:image" content="images/open_graph">
+    <meta property="og:url" content="https://sebastian-molero.github.io/wdd231/">
+
+    <!-- ICON HERE -->
+    <link rel="icon" href="images/icon.ico">
+    
+    <!-- FONTS HERE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- STYLES HERE -->
+    <link rel="stylesheet" href="styles/home.css">
+
+    <!-- SCRIPTS HERE -->
+    <script src="scripts/home.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="a new companion logo" class="logo">
+        <span class="business_name">A New Companion</span>
+        <nav id="nav" class="nav">
+            <ul class="nav_list">
+                <li class="list_item"><a href="index.html" class="nav_link current">Home</a></li>
+                <li class="list_item"><a href="adopt.html" class="nav_link">Adopt</a></li>
+                <li class="list_item"><a href="blog.html" class="nav_link">Blog & Tips</a></li>
+                <li class="list_item"><a href="contact.html" class="nav_link">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button aria-label="Open Menu" id="hamburger" class="ham_btn"></button>
+    </header>
+    <div class="hero_container">
+        <picture>
+            <source media="(min-width: 800px)" srcset="images/hero_large.webp">
+            <source media="(min-width: 500px)" srcset="images/hero_medium.webp">
+            <img src="images/hero_small.webp" alt="" class="hero">
+        </picture>
+    </div>
+    <main>
+        <h1>Your New Best Friend Is Waiting For You</h1>
+        
+        
+        <section class="about_us">
+            <h2>About Us</h2>
+            <p>At <strong>A New Companion</strong>, we believe that every pet deserves a loving home — whether they come from a rescue, a trusted family, or a safe and responsible environment.</p>
+            <p>Our mission is to connect people with pets in meaningful ways, by making the adoption process transparent, compassionate, and stress-free. We work with families, individual pet owners, and small community networks to ensure pets find the right match — not just any home, but the <em>right</em> one.</p>
+            <p>We're here to support both humans and animals — offering tips, tools, and heartfelt guidance through every step of the journey. Because bringing home a pet isn't just about adopting — it's about welcoming a companion who will change your life.</p>
+        </section>
+        
+        
+        <section class="adopted">
+            <h2>They Already Found A Lovely And Cozy Home</h2>
+            <div>
+                <h4>Duke</h4>
+                <img src="images/adopted_01.webp" alt="Duke">
+                <p>Duke was adopted by an active family and now enjoys daily hikes and endless playtime.</p>
+            </div>
+            <div>
+                <h4>Sasha</h4>
+                <img src="images/adopted_02.webp" alt="Sasha">
+                <p>Sasha found a quiet home where she spends her days napping and being pampered.</p>
+            </div>
+            <div>
+                <h4>Bubbles</h4>
+                <img src="images/adopted_03.webp" alt="Bubbles">
+                <p>Bubbles was adopted by a young family and quickly became their favorite little friend.</p>
+            </div>
+        </section>
+
+
+        <section class="how_it_works">
+            <h2>How It Works</h2>
+            <p>Three simple steps to find your perfect companion.</p>
+        
+            <div class="steps_container">
+                <div class="step">
+                    <h3>1. Browse Available Pets</h3>
+                    <p>Explore our listings of dogs, cats, and small pets ready to find a loving home. Each profile includes important details like age, breed, personality, and needs — so you can find the perfect match.</p>
+                </div>
+        
+                <div class="step">
+                    <h3>2. Submit an Adoption Inquiry</h3>
+                    <p>Found a companion you love? Fill out a short form to let us know you’re interested. We'll reach out to walk you through the next steps and learn more about your home environment.</p>
+                </div>
+        
+                <div class="step">
+                    <h3>3. Welcome Them Home</h3>
+                    <p>Complete the adoption and bring your new best friend home. We’ll help you prepare for a smooth transition — with care tips, vet info, and continued support when you need it.</p>
+                </div>
+            </div>
+        
+            <a href="adopt.html" class="cta_button">Meet Our Pets</a>
+        </section>
+        
+        <section class="trust_section">
+            <h2>Why Families Trust Us</h2>
+            <p>We’re more than a platform — we’re a community. Every pet listed on our site has been verified and matched through a transparent process. We work closely with responsible families, shelters, and caregivers to ensure pets are healthy, safe, and ready to be loved.</p>
+        
+            <ul class="trust_points">
+                <li>All pets are reviewed by real people — no automated listings</li>
+                <li>Health records and background details included when available</li>
+                <li>Continued support after adoption, because we care</li>
+            </ul>
+        
+            <p>Your trust matters. That's why we're committed to honesty, compassion, and doing what’s best — for both pets and people.</p>
+        </section>
+        
+
+        <section class="testimonials">
+            <h2>What Adopters Are Saying</h2>
+            <div id="testimonials"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p><strong>Location:</strong> Based in Austin, TX</p>
+            <p><strong>Email:</strong> <a href="#">contact@newcompanion.org</a></p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        </div>
+
+        <div class="social_media">
+            <h3>Follow Us</h3>
+            <div>
+                <a href=""><img src="images/facebook.svg" alt="follow us on facebook"></a>
+                <a href=""><img src="images/instagram.svg" alt="follow us on instagram"></a>
+                <a href=""><img src="images/twitter-alt.svg" alt="follow us on x"></a>
+            </div>
+        </div>
+
+        <div class="legal">
+            <h3>Legal & Credits</h3>
+            <p><a href="#">Project Demo Video</a></p>
+            <p>Images sourced from <a href="https://unsplash.com"></a></p>
+            <p>&copy; <span id="currentYear"></span> A New Companion. All rights reserved.</p>
+            <p>Developed by Sebastian Molero</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
