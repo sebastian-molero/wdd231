@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Directory | Villa de Leyva Chamber of Commerce</title>
+    <title>Discover | Villa de Leyva Chamber of Commerce</title>
     <meta name="description" content="Find local business, shops, hotels and services affiliated with the Villa de Leyva Chamber of Commerce. Support local commerce and explore opportunities.">
     <meta name="author" content="Sebastian Molero">
     
@@ -14,19 +14,19 @@
     
     <!--Styles Here-->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/discover.css">
     
     <!--Scripts Here-->
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
     
     <!--Icon Here-->
     <link rel="icon" href="images/chamber_icon.ico">
     
     <!--Open Graph Here-->
-    <meta property="og:title" content="Business Directory | Villa de Leyva Chamber of Commerce">
+    <meta property="og:title" content=" Discover | Villa de Leyva Chamber of Commerce">
     <meta property="og:description" content="Explore business affiliated with the Villa de Leyva Chamber of Commerce.">
     <meta property="og:image" content="https://sebastian-molero.github.io/wdd231/chamber/images/open_graph_image.webp">
-    <meta property="og:url" content="https://sebastian-molero.github.io/wdd231/chamber/directory">
+    <meta property="og:url" content="https://sebastian-molero.github.io/wdd231/chamber/discover">
 </head>
 <body>
     <header>
@@ -38,13 +38,13 @@
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="list-item">
-                    <a href="#" class="current nav-link">Directory</a>
+                    <a href="directory.html" class="nav-link">Directory</a>
                 </li>
                 <li class="list-item">
                     <a href="join.html" class="nav-link">Join</a>
                 </li>
                 <li class="list-item">
-                    <a href="discover.html" class="nav-link">Discover</a>
+                    <a href="#" class="nav-link current">Discover</a>
                 </li>
             </ul>
         </nav>
@@ -60,13 +60,11 @@
         <button id="cta-btn">Discover More</button>
     </section>
     <main>
-        <h1>Business Directory</h1>
-        <div class="view-toggle">
-            <button id="gridViewBtn" class="active">Grid</button>
-            <button id="listViewBtn">List</button>
-        </div>
-        <section id="directory" class="directory-grid"></section>
-    </main>
+        <h1>Discover What Villa de Leyva Has To Offer</h1>
+        <div id="lastVisited"></div>
+
+        <div id="grid" class="grid"></div>
+        </main>
     <footer>
         <div class="contact">
             <h3>Contact</h3>

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    background-color: #eee2;
+}
+
+h1{
+    color: rgb(3, 83, 3);
+}
+
+h2{
+    color: rgba(160, 160, 33, 0.76);
+}
+
+strong{
+    color: rgba(9, 153, 9, 0.705);
+}
+
+a{
+    display: block;
+    margin-top: 20px;
+    width: 150px;
+    text-align: center;
+    text-wrap: pretty;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(19, 143, 19);
+    padding: 8px 12px;
+    border-radius: 6px;
+
+}

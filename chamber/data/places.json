@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Plaza Mayor",
+      "address": "Historic Center, Villa de Leyva, Boyacá, Colombia",
+      "description": "The main square of Villa de Leyva, one of the largest in the Americas, fully cobbled and surrounded by colonial architecture.",
+      "image": "images/logo.webp"
+    },
+    {
+      "name": "Casa Terracota",
+      "address": "Monquirá village, 10 minutes from downtown Villa de Leyva",
+      "description": "A house entirely built out of baked clay, considered the largest piece of pottery in the world.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Casa_Terracota%2C_Villa_de_Leyva.jpg/640px-Casa_Terracota%2C_Villa_de_Leyva.jpg"
+    },
+    {
+      "name": "El Fósil Museum",
+      "address": "Km 5 on the road to Santa Sofía, Villa de Leyva, Boyacá",
+      "description": "Paleontological museum housing a fossil of a Kronosaurus over 120 million years old, among other prehistoric findings.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Museo_El_F%C3%B3sil.jpg/640px-Museo_El_F%C3%B3sil.jpg"
+    },
+    {
+      "name": "El Infiernito (Monquirá Archaeological Site)",
+      "address": "Monquirá village, 6 km from Villa de Leyva",
+      "description": "An ancient Muisca archaeological site with stone monoliths and a pre-Columbian astronomical observatory.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Infiernito.jpg/640px-Infiernito.jpg"
+    },
+    {
+      "name": "Iguaque Lagoon",
+      "address": "Iguaque Flora and Fauna Sanctuary, road from Villa de Leyva to Arcabuco",
+      "description": "A sacred Muisca lagoon located in the páramo; accessible through an ecological hike in a protected natural area.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Laguna_de_Iguaque.jpg/640px-Laguna_de_Iguaque.jpg"
+    },
+    {
+      "name": "Pozos Azules",
+      "address": "Monquirá village, 3 km from downtown Villa de Leyva",
+      "description": "A group of artificial turquoise-colored ponds created by mineral filtration and former mining activity.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Pozos_azules_-_Villa_de_Leyva.jpg/640px-Pozos_azules_-_Villa_de_Leyva.jpg"
+    },
+    {
+      "name": "Antonio Nariño House Museum",
+      "address": "Carrera 9 No. 10-25, Villa de Leyva, Boyacá",
+      "description": "Museum located in the house where independence leader Antonio Nariño lived, showcasing documents and artifacts.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Casa_de_Antonio_Nari%C3%B1o.jpg/640px-Casa_de_Antonio_Nari%C3%B1o.jpg"
+    },
+    {
+      "name": "Museum of El Carmen",
+      "address": "Calle 13 and Carrera 10, Villa de Leyva, near the main square",
+      "description": "A church and religious art museum with an important collection of colonial religious paintings and sculptures.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Museo_del_Carmen_-_Villa_de_Leyva.jpg/640px-Museo_del_Carmen_-_Villa_de_Leyva.jpg"
+    }
+  ]
+  

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A New Companion | Contact Us</title>
+    <meta name="description" content="Find your new best friend. Discover dogs, cats, and other pets looking for loving homes. Adopt now.">
+    <meta name="author" content="Sebastian Molero">
+
+    <!--Open Graph Here-->
+    <meta property="og:title" content="A New Companion | Contact Us">
+    <meta property="og:description" content="Find your new best friend. Discover dogs, cats, and other pets looking for loving homes. Adopt now.">
+    <meta property="og:image" content="images/open_graph">
+    <meta property="og:url" content="https://sebastian-molero.github.io/wdd231/">
+
+    <!-- ICON HERE -->
+    <link rel="icon" href="images/icon.ico">
+    
+    <!-- FONTS HERE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- STYLES HERE -->
+    <link rel="stylesheet" href="styles/contact_us.css">
+
+    <!-- SCRIPTS HERE -->
+    <script src="scripts/contact_us.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="a new companion logo" class="logo">
+        <span class="business_name">A New Companion</span>
+        <nav id="nav" class="nav">
+            <ul class="nav_list">
+                <li class="list_item"><a href="index.html" class="nav_link ">Home</a></li>
+                <li class="list_item"><a href="adopt.html" class="nav_link">Adopt</a></li>
+                <li class="list_item"><a href="blog.html" class="nav_link">Blog & Tips</a></li>
+                <li class="list_item"><a href="contact_us.html" class="nav_link current">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button aria-label="Open Menu" id="hamburger" class="ham_btn"></button>
+    </header>
+    <div class="hero_container">
+        <picture>
+            <source media="(min-width: 800px)" srcset="images/hero_large.webp">
+            <source media="(min-width: 500px)" srcset="images/hero_medium.webp">
+            <img src="images/hero_small.webp" alt="" class="hero">
+        </picture>
+    </div>
+    <main>
+        <h1>Contact Us</h1>
+        <form action="thanks.html" method="get">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="John Doe" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone">
+
+                <label for="location">City / State</label>
+                <input type="text" name="location" id="location">
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Reason For The Message</legend>
+
+                <label for="reason">Reason For Contact</label>
+                <select name="reason" id="reason" required>
+                    <option value="" selected disabled>Select An Option</option>
+                    <option value="adopt" id="adopt">Adopt</option>
+                    <option value="volunteering">Volunteering</option>
+                    <option value="mq">Message / Questions</option>
+                </select>
+
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" requied rows="5"></textarea>
+
+                <div id="adoption" class="adoption">
+                    <label for="petName">Animal Name</label>
+                    <input type="text" name="petName" id="petName">
+
+                    <p>Are there other pets in your home</p>
+
+                    <input type="radio" name="otherPet" id="otherPet_yes" value="yes" >
+                    <label for="otherPet_yes">Yes</label><br>
+
+                    <input type="radio" name="otherPet" id="otherPet_no" value="no">
+                    <label for="otherPet_no">No</label>
+
+                    <p>Are there children in your home</p>
+
+                    <input type="radio" name="kids" id="kids_yes" value="yes" >
+                    <label for="kids_yes">Yes</label><br>
+
+                    <input type="radio" name="kids" id="kids_no" value="no">
+                    <label for="kids_no">No</label>
+                </div>
+
+                <label for="reference">How Did You Hear About Us?</label>
+                <select name="reference" id="reference">
+                    <option value="" selected disabled>Select An Option</option>
+                    <option value="media">Social Media</option>
+                    <option value="ff">Friend Or Family</option>
+                    <option value="google">Google</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+            <input type="hidden" id="timestamp" value="" name="timestamp">
+
+            <input type="submit" value="Send Message">
+        </form>
+    </main>
+    <footer>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p><strong>Location:</strong> Based in Austin, TX</p>
+            <p><strong>Email:</strong> <a href="#">contact@newcompanion.org</a></p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        </div>
+
+        <div class="social_media">
+            <h3>Follow Us</h3>
+            <div>
+                <a href=""><img src="images/facebook.svg" alt="follow us on facebook"></a>
+                <a href=""><img src="images/instagram.svg" alt="follow us on instagram"></a>
+                <a href=""><img src="images/twitter-alt.svg" alt="follow us on x"></a>
+            </div>
+        </div>
+
+        <div class="legal">
+            <h3>Legal & Credits</h3>
+            <p><a href="#">Project Demo Video</a></p>
+            <p>Images sourced from <a href="https://unsplash.com">Unsplash</a></p>
+            <p>&copy; <span id="currentYear"></span> A New Companion. All rights reserved.</p>
+            <p>Developed by Sebastian Molero</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

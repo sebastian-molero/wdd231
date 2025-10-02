@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3{
+    font-family: 'Playfair', serif;
+    text-wrap: balance;
+    text-align: center;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    text-wrap: pretty;
+}
+body{
+    max-width: 80%;
+    margin: auto;
+    background-color: #f9f6f0;
+    color: #2f2f2f;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/********************** HEADER ****************************/
+header{
+    padding: .3rem .6rem;
+    display: grid;
+    grid-template-columns: 60px auto 24px;
+    gap: 1rem 20px;
+    align-items: center;
+}
+.logo{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+header span{
+    font-size: 1.2rem;
+}
+.navigation{
+    grid-row: 2;
+    grid-column: -1/1;
+    display: none;
+}
+.navigation.show{
+    display: block;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.nav-link{
+    color: #2f2f2f;
+    border-bottom: 2px solid #302f2fe5;
+    display: block;
+    text-align: center;
+    padding: .7rem 0;
+    text-decoration: none;
+    transition: color .7s ease, letter-spacing .4s ease;
+    font-size: 1.3rem;
+}
+.current{
+    background-color: #bdbcbc60;
+}
+.nav-link:hover{
+    color: #6e0b0bd5;
+    letter-spacing: .35rem;
+}
+/********************** HAMBURGER MENU ***********************/
+.hamburger{
+    border: none;
+    background: none;
+    font-size: 1.6rem;
+    color: #3d405b;
+    cursor: pointer;
+}
+.hamburger::before{
+    content: "\2630";
+}
+.hamburger.show::before{
+    content: "\00D7";
+}
+/************************** HERO ******************************/
+.hero{
+    position: relative;
+}
+picture img{
+    display: block;
+    width: 97%;
+    margin: auto;
+    max-height: 500px;
+    border-radius: 4px;
+}
+#cta-btn{
+    padding: 4px 5px;
+    position: absolute;
+    top: 67%;
+    right: 6%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: linear-gradient(rgb(119, 39, 39), rgb(71, 4, 4));
+    color: #fff;
+}
+
+
+/**************************** FOOTER ************************/
+footer{
+    min-height: 200px;
+    margin: 40px 0 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+.contact, .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.social-media{
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+}
+.social-media img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(124, 32, 32);
+}
+.social-media img:hover{
+    background-color: rgba(219, 218, 218, 0.788);
+}
+
+
+#lastVisited{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/********************** GRID *********************/
+
+.grid{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.place{
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "description"
+    "address"
+    "button";
+
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform .3s ease;
+}
+
+.place h2{
+    grid-area: name;
+}
+
+.place figure{
+    grid-area: image;
+    border-radius: 6px;
+}
+
+.place img{
+    width: 100%;
+    height: auto;
+}
+
+.description{
+    grid-area: description;
+}
+
+.address{
+    grid-area: address;
+}
+
+.place button{
+    grid-area: button;
+}
+
+
+
+.place {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.place:hover {
+    transform: scale(1.02);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+
+@media screen and (min-width: 641px) {
+    .place{
+        grid-template-areas: 
+        "name name"
+        "image description"
+        "image address"
+        "button button";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+    .grid{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hamburger{
+        display: none;
+    }
+    header{
+        grid-template-columns: 60px auto auto;
+    }
+    .navigation{
+        display: block;
+        grid-row: 1;
+        grid-column: 3/4;
+    }
+    .nav-list{
+        flex-direction: row;
+        gap: 5px;
+        justify-content: end;
+    }
+    .nav-link{
+        padding: .4rem;
+        border: none;
+        font-size: 1.18rem;
+        transition: color .7s ease;
+}
+    
+    .nav-link:hover{
+        letter-spacing: inherit;
+    }
+    .current{
+        border-bottom: 2px solid #2f2f2f;
+        background-color: transparent;
+    }
+    footer{
+        flex-direction: row;
+        padding-bottom: 30px;
+        gap: 1.7rem;
+        text-align: left;
+    }
+    .contact, .bottom{
+        gap: 1rem
+    }
+    .social-media{
+        align-self: center;
+        flex-wrap: wrap;
+    }
+}

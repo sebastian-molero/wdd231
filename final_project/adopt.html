@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A New Companion | Home Page</title>
+    <meta name="description" content="Find your new best friend. Discover dogs, cats, and other pets looking for loving homes. Adopt now.">
+    <meta name="author" content="Sebastian Molero">
+
+    <!--Open Graph Here-->
+    <meta property="og:title" content="A New Companion | Home Page">
+    <meta property="og:description" content="Find your new best friend. Discover dogs, cats, and other pets looking for loving homes. Adopt now.">
+    <meta property="og:image" content="images/open_graph">
+    <meta property="og:url" content="https://sebastian-molero.github.io/wdd231/">
+
+    <!-- ICON HERE -->
+    <link rel="icon" href="images/icon.ico">
+    
+    <!-- FONTS HERE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- STYLES HERE -->
+    <link rel="stylesheet" href="styles/adopt.css">
+
+    <!-- SCRIPTS HERE -->
+    <script src="scripts/adopt.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.webp" alt="a new companion logo" class="logo" width="100" height="100">
+        <span class="business_name">A New Companion</span>
+        <nav id="nav" class="nav">
+            <ul class="nav_list">
+                <li class="list_item"><a href="index.html" class="nav_link current">Home</a></li>
+                <li class="list_item"><a href="adopt.html" class="nav_link">Adopt</a></li>
+                <li class="list_item"><a href="blog.html" class="nav_link">Blog & Tips</a></li>
+                <li class="list_item"><a href="contact_us.html" class="nav_link">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button aria-label="Open Menu" id="hamburger" class="ham_btn"></button>
+    </header>
+    <div class="hero_container">
+        <picture>
+            <source media="(min-width: 800px)" srcset="images/hero_large.webp">
+            <source media="(min-width: 500px)" srcset="images/hero_medium.webp">
+            <img src="images/hero_small.webp" alt="" class="hero" width="300" height="245">
+        </picture>
+    </div>
+    <main>
+        <h1>They Are Seeking A New Home</h1>
+
+        <div id="petsContainer" class="petsContainer"></div>
+        <dialog id="dialog">
+            <div id="dialogContent" class="dialogContent"></div>
+            <button id="closeButton" class="closeButton" aria-label="close modal"></button>
+        </dialog>
+    </main>
+    <footer>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <p><strong>Location:</strong> Based in Austin, TX</p>
+            <p><strong>Email:</strong> <a href="#">contact@newcompanion.org</a></p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        </div>
+
+        <div class="social_media">
+            <h3>Follow Us</h3>
+            <div>
+                <a href=""><img src="images/facebook.svg" alt="follow us on facebook" width="60" height="60"></a>
+                <a href=""><img src="images/instagram.svg" alt="follow us on instagram" width="60" height="60"></a>
+                <a href=""><img src="images/twitter-alt.svg" alt="follow us on x" width="60" height="60"></a>
+            </div>
+        </div>
+
+        <div class="legal">
+            <h3>Legal & Credits</h3>
+            <p><a href="#">Project Demo Video</a></p>
+            <p>Images sourced from <a href="https://unsplash.com">Unsplash</a></p>
+            <p>&copy; <span id="currentYear"></span> A New Companion. All rights reserved.</p>
+            <p>Developed by Sebastian Molero</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
