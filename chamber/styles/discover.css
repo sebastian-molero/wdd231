@@ -94,18 +94,6 @@ picture img{
     max-height: 500px;
     border-radius: 4px;
 }
-#cta-btn{
-    padding: 4px 5px;
-    position: absolute;
-    top: 67%;
-    right: 6%;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    background: linear-gradient(rgb(119, 39, 39), rgb(71, 4, 4));
-    color: #fff;
-}
-
 
 /**************************** FOOTER ************************/
 footer{
@@ -150,7 +138,7 @@ h3{
 
 .grid{
     display: grid;
-    gap: 1rem;
+    gap: 2rem 1rem;
     padding: 1rem;
 }
 
@@ -162,12 +150,14 @@ h3{
     "description"
     "address"
     "button";
-
+    gap: 1rem;
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 1rem;
     border-radius: 8px;
     transition: transform .3s ease;
+    border: 2px solid rgb(180, 29, 29);
+    box-shadow: 0 0 30px 0 #0002;
 }
 
 .place h2{
@@ -177,11 +167,13 @@ h3{
 .place figure{
     grid-area: image;
     border-radius: 6px;
+    align-self: center;
 }
 
 .place img{
     width: 100%;
-    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 6px;
 }
 
 .description{
@@ -194,17 +186,10 @@ h3{
 
 .place button{
     grid-area: button;
-}
-
-
-
-.place {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s ease;
+    width: auto;
+    justify-self: center;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
 }
 
 .place:hover {
