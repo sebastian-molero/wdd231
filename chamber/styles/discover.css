@@ -98,6 +98,7 @@ picture img{
 /**************************** FOOTER ************************/
 footer{
     min-height: 200px;
+    max-height: 535px;
     margin: 40px 0 30px;
     display: flex;
     flex-direction: column;
@@ -135,9 +136,15 @@ h3{
 }
 
 /********************** GRID *********************/
+h1{
+    min-height: 36px;
+    max-height: 222px;
+}
 
 .grid{
     display: grid;
+    min-height: 1298.05px;
+    max-height: 4100px;
     gap: 2rem 1rem;
     padding: 1rem;
 }
@@ -172,7 +179,6 @@ h3{
 
 .place img{
     width: 100%;
-    aspect-ratio: 16/9;
     border-radius: 6px;
 }
 
