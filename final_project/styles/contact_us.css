@@ -215,6 +215,11 @@ input[type="submit"]{
     color: #fff;
 }
 
+input[type="submit"]:hover{
+    background-color: #08661c;
+}
+
+
 footer{
     display: flex;
     flex-direction: column;

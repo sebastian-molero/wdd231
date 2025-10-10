@@ -1,16 +1,4 @@
-const hamburger = document.getElementById('hamburger');
-const nav = document.getElementById('nav');
-
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('show');
-    nav.classList.toggle('show');
-})
-
-
-document.getElementById('timestamp').value = new Date().toISOString();
-
-
-const displayAdoption = () => {
+export const toggleAdoptionForm = () => {
     const div = document.getElementById('adoption');
     const select = document.getElementById('reason');
     const animalName = document.getElementById('petName');
@@ -39,8 +27,16 @@ const displayAdoption = () => {
     }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-    displayAdoption(); 
-    document.getElementById('reason').addEventListener('change', displayAdoption);
-});
+export const getName = () => {
+    const form = document.getElementById('form');
+    const name = document.getElementById('name').value;
+
+    form.addEventListener('submit', () => {
+        const userName = name.trim();
+        
+        if (userName) {
+            localStorage.setItem('userName', userName);
+        }
+    });
+}
 
