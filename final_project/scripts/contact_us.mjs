@@ -1,5 +1,5 @@
 import { toggleHamburgerMenu } from './menu.mjs';
-import { toggleAdoptionForm, getName } from './adoption_form.mjs';
+import { toggleAdoptionForm,} from './adoption_form.mjs';
 
 // Toggle hamburger menu
 toggleHamburgerMenu();
@@ -11,6 +11,4 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleAdoptionForm();
     document.getElementById('reason').addEventListener('change', toggleAdoptionForm);
 });
-
-getName();
 

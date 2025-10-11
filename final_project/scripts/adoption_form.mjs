@@ -26,17 +26,3 @@ export const toggleAdoptionForm = () => {
         kidsNo.checked = false;
     }
 };
-
-export const getName = () => {
-    const form = document.getElementById('form');
-    const name = document.getElementById('name').value;
-
-    form.addEventListener('submit', () => {
-        const userName = name.trim();
-        
-        if (userName) {
-            localStorage.setItem('userName', userName);
-        }
-    });
-}
-

@@ -14,7 +14,7 @@ fetchTestimonials(testimonialsUrl, testimonialContainer);
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
 
-
+// Welcome Message
 const welcome = localStorage.getItem('welcome');
 const welcomeMessage = document.getElementById('welcome');
 const storedName = localStorage.getItem('userName');
@@ -29,5 +29,3 @@ else if (welcome && !storedName) {
 else {
     welcomeMessage.textContent = `Welcome back ${storedName}! We're glad to see you again.`;
 }
-
-

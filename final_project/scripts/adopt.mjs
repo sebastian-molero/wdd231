@@ -12,8 +12,14 @@ toggleHamburgerMenu();
 
 // Fetch and display pets
 const init = async () => {
-    const petsData = await fetchPets(petsUrl);
-    displayPets(petsData, petsContainer, dialog, dialogText);
+    try {
+        const petsData = await fetchPets(petsUrl);
+        displayPets(petsData, petsContainer, dialog, dialogText);
+    } catch (error) {
+        console.error('Error fetching and displaying pets:', error);
+        dialogText.textContent = 'There was an error loading the pets data. Please try again later.';
+        dialog.showModal();
+    }
 };
 
 init();

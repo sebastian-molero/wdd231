@@ -1,10 +1,17 @@
 // Fetch pets data from JSON file
 export const fetchPets = async (petsUrl) => {
-    const response = await fetch(petsUrl);
-    const data = await response.json();
-    return data;
+    try {
+        const response = await fetch(petsUrl);
+        if (!response.ok) {
+            throw new Error(`Error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching pets data:', error);
+        throw error;
+    }
 };
-
 
 // Display pets in random order
 export const displayPets = (data, petsContainer, dialog, dialogText) => {
