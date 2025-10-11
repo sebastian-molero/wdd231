@@ -37,5 +37,7 @@ a{
     background-color: rgb(19, 143, 19);
     padding: 8px 12px;
     border-radius: 6px;
-
+}
+a:hover{
+    background-color: rgba(19, 143, 19, 0.863);
 }
