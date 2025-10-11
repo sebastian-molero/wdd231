@@ -34,7 +34,7 @@ export const displayPets = (data, petsContainer, dialog, dialogText) => {
         openButton.addEventListener('click', () => {
             dialogText.innerHTML = `
                 <h3 class="pet_name">${pet.name}</h3>
-                <img class="pet_img" src="${pet.img}" alt="${pet.name}">
+                <img class="pet_img" src="${pet.img}" alt="${pet.name}" loading="lazy">
                 <p class="pet_description">${pet.description}</p>
                 <ul class="pet_data">
                     <li><strong>Species:</strong> ${pet.species}</li>
